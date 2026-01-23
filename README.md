@@ -27,16 +27,16 @@ Generates an output PDF
 
 **Project Structure**
 pdf-splitter/
-├── input/
-│   └── combined.pdf
-├── output/
-│   └── (generated PDFs)
-├── src/
-│   ├── main.js        # Orchestrator
-│   └── worker.js      # PDF processing worker
-├── pageMap.json
-├── package.json
-└── README.md
+input/
+ combined.pdf
+output/
+ (generated PDFs)
+src/
+ main.js        # Orchestrator
+worker.js      # PDF processing worker
+pageMap.json
+package.json
+README.md
 
 **Prerequisites**
 
@@ -77,6 +77,6 @@ npm start
 **Output**
 Generated PDFs appear in:
 output/
-├── doctype1.pdf
-├── doctype2.pdf
-└── doctype3.pdf
+ doctype1.pdf
+ doctype2.pdf
+ doctype3.pdf
