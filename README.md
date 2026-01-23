@@ -13,10 +13,10 @@ Non-blocking, event-loop safe
 
 **Architecture Overview**
 Main Thread
- ├── Load combined PDF (once)
- ├── Load page → docType mapping
- ├── Spawn workers per docType
- └── Collect generated PDFs
+ Load combined PDF (once)
+ Load page → docType mapping
+ Spawn workers per docType
+ Collect generated PDFs
 
 
 **Each worker:**
