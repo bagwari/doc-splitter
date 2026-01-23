@@ -25,19 +25,6 @@ Loads shared PDF buffer
 Extracts required pages
 Generates an output PDF
 
-**Project Structure**
-pdf-splitter/
-input/
- combined.pdf
-output/
- (generated PDFs)
-src/
- main.js        # Orchestrator
-worker.js      # PDF processing worker
-pageMap.json
-package.json
-README.md
-
 **Prerequisites**
 
 Node.js 22.x+
