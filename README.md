@@ -1,4 +1,4 @@
-PDF Splitter (Node.js + Worker Threads)
+**PDF Splitter (Node.js + Worker Threads)**
 
 High-performance Node.js utility to split a single combined PDF into multiple PDFs based on page → document type mapping, using Worker Threads for parallel processing.
 
@@ -7,14 +7,11 @@ Designed for scalability, performance, and production usage.
 **Features**
 
 Parallel PDF processing using Node.js worker threads
-
 Splits PDFs by document type
-
 Reads source PDF only once
+Non-blocking, event-loop safe
 
-⚡ Non-blocking, event-loop safe
-
-Architecture Overview
+**Architecture Overview**
 Main Thread
  ├── Load combined PDF (once)
  ├── Load page → docType mapping
@@ -22,15 +19,13 @@ Main Thread
  └── Collect generated PDFs
 
 
-Each worker:
+**Each worker:**
 
 Loads shared PDF buffer
-
 Extracts required pages
-
 Generates an output PDF
 
-Project Structure
+**Project Structure**
 pdf-splitter/
 ├── input/
 │   └── combined.pdf
@@ -43,17 +38,12 @@ pdf-splitter/
 ├── package.json
 └── README.md
 
-📦 Prerequisites
+**Prerequisites**
 
 Node.js 22.x+
-
 npm 10+
 
-Check version:
-
-node -v
-
-Installation
+**Installation**
 git clone <repo-url>
 cd pdf-splitter
 npm install
@@ -78,18 +68,14 @@ Defines which pages belong to which document type.
 **Notes:**
 
 Pages are 1-based
-
 Each key becomes an output PDF
-
 Pages do not need to be contiguous
 
-▶ Running the Application
+**▶ Running the Application**
 npm start
 
-📂 Output
-
+**Output**
 Generated PDFs appear in:
-
 output/
 ├── doctype1.pdf
 ├── doctype2.pdf
